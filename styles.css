@@ -1,0 +1,343 @@
+:root {
+    --bg-color: #191919;
+    --text-color: rgba(255, 255, 255, 0.9);
+    --text-muted: rgba(255, 255, 255, 0.5);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --hover-bg: rgba(255, 255, 255, 0.05);
+    --toggle-triangle: rgba(255, 255, 255, 0.4);
+    --font-sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-color: var(--text-muted);
+}
+
+a:hover {
+    text-decoration-color: var(--text-color);
+}
+
+.notion-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 96px 10vh;
+}
+
+.portfolio-main-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 64px;
+    margin-bottom: 40px;
+}
+
+.profile-section-new {
+    display: flex;
+    gap: 48px;
+    margin-bottom: 64px;
+    align-items: flex-start;
+}
+
+.profile-left {
+    flex-shrink: 0;
+}
+
+.profile-avatar-large {
+    width: 280px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: block;
+    background-color: var(--hover-bg);
+}
+
+.profile-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.profile-greeting {
+    font-weight: 600;
+}
+
+.profile-bullet-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 20px;
+    margin-top: 8px;
+}
+
+.profile-bullet-list li {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.new-contact {
+    margin-top: 24px;
+    gap: 12px;
+}
+
+.new-contact .contact-item {
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.new-contact .contact-item a {
+    text-decoration: none;
+}
+.new-contact .contact-item a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .profile-section-new {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+/* Divider */
+.notion-divider {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 24px 0;
+}
+
+/* Toggles */
+.notion-toggle {
+    margin: 8px 0;
+}
+
+.notion-toggle summary {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 500;
+    list-style: none; /* Hide default arrow */
+    padding: 4px 0;
+    transition: background 0.1s ease;
+    border-radius: 4px;
+}
+
+.notion-toggle summary::-webkit-details-marker {
+    display: none;
+}
+
+.notion-toggle summary::before {
+    content: '▶';
+    font-size: 10px;
+    color: var(--toggle-triangle);
+    margin-right: 8px;
+    transition: transform 0.2s ease;
+    display: inline-block;
+    width: 16px;
+    text-align: center;
+}
+
+.notion-toggle[open] summary::before {
+    transform: rotate(90deg);
+}
+
+.notion-toggle summary:hover {
+    background-color: var(--hover-bg);
+}
+
+.toggle-content {
+    padding-left: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 0 48px 80px;
+    }
+}
+
+@media (max-width: 600px) {
+    .content-wrapper {
+        padding: 0 24px 80px;
+    }
+}
+
+/* Gallery Grids */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.gallery-card {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.gallery-card:hover {
+    background-color: var(--hover-bg);
+}
+
+.gallery-card-image {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.gallery-card-content {
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.gallery-card-title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gallery-card-domain {
+    font-size: 12px;
+    color: var(--text-muted);
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+
+/* Tabs */
+.tabs-container {
+    margin-bottom: 32px;
+}
+
+.tabs-header {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 16px;
+}
+
+.tab-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: inherit;
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+.tab-btn:hover {
+    color: var(--text-color);
+}
+
+.tab-btn.active {
+    color: var(--text-color);
+}
+
+.tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--text-color);
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.skills-list {
+}
+
+/* Footer */
+.portfolio-footer {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-text {
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+.footer-callout {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 32px 0 48px 0;
+    padding-left: 20px;
+    border-left: 3px solid var(--border-color);
+}
+
+.footer-link-block {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer-link-block a {
+    text-decoration: none;
+}
+
+.footer-link-block a:hover {
+    text-decoration: underline;
+}
+
+.footer-icon {
+    margin-right: 12px;
+    font-size: 20px;
+}
+
+.footer-note {
+    font-size: 14px;
+    color: var(--text-muted);
+    text-align: center;
+}

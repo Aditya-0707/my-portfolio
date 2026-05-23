@@ -20,8 +20,7 @@
             <!-- Profile Section -->
             <header class="profile-section-new">
                 <div class="profile-left">
-                    <img src="Projects Pages/assets/ProfileImage.png" alt="Aditya Pawar"
-                        class="profile-avatar-large">
+                    <img src="Projects Pages/assets/ProfileImage.png" alt="Aditya Pawar" class="profile-avatar-large">
                 </div>
 
                 <div class="profile-right">
@@ -32,12 +31,12 @@
                         Known for driving clarity between business and technology to ensure on-time, high-quality
                         delivery.</p>
 
-                    <details class="notion-toggle">
+                    <details class="notion-toggle" open>
                         <summary>Read More</summary>
                         <div class="toggle-content">
                             <ul class="profile-bullet-list">
                                 <li><strong>Execution & Ownership:</strong> High-ownership, detail-oriented professional
-                                    who collaborates effectively with stakeholders, cross-functional teams to ensure
+                                    who collaborates effectively with stakeholders, cross-functional engto ensure
                                     requirement clarity, solution alignment, and smooth go-live execution.</li>
                                 <li><strong>Domain & Technical Expertise:</strong> Strong expertise in BRMS
                                     configuration, process mapping, workflow analysis, change management, JIRA tracking,
@@ -72,75 +71,150 @@
             <!-- Dynamic Content Area -->
             <div id="dynamic-content">
                 <!-- Case Studies -->
-                <h3 class="section-title">Case Studies</h3>
-                <div class="gallery-grid">
-                    <a href="Projects Pages/calcinsight.html" class="gallery-card">
-                        <img src="Projects Pages/assets/CalcInsight_Cover.png" alt="CalcInsight"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">CalcInsight</span>
-                            <span class="gallery-card-domain">Domain: API Observability</span>
+                <div class="featured-projects-section" style="display: flex; gap: 48px; align-items: flex-start;">
+                    <!-- Left Column -->
+                    <div class="featured-left" style="flex: 1; min-width: 300px;">
+                        <h3 class="section-title">Case Studies</h3>
+                        <details class="notion-toggle" open>
+                            <summary>Summary</summary>
+                            <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                                <p style="font-size: 13px; line-height: 1.6; color: var(--text-color);">
+                                    [Summary to be added]
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="featured-right" style="flex: 2; min-width: 0;">
+                        <!-- Right column header (Notion style) -->
+                        <div class="notion-tabs-header"
+                            style="display: flex; justify-content: space-between; align-items: center; border-bottom: none; margin-bottom: 16px;">
+                            <div style="display: flex; align-items: center;">
+                                <span
+                                    style="font-size: 14px; color: var(--text-color); padding: 4px 8px; background-color: rgba(255,255,255,0.08); border-radius: 4px;">🗃</span>
+                            </div>
+                            <div class="notion-view-actions"
+                                style="display: flex; gap: 16px; color: var(--text-muted); font-size: 16px;">
+                                <span
+                                    style="cursor: pointer; color: #50a0ff; font-weight: bold; transform: scaleY(0.8); display: inline-block;">≡</span>
+                                <span style="cursor: pointer; font-size: 14px; font-weight: bold;">⇅</span>
+                                <span
+                                    style="cursor: pointer; font-size: 14px; transform: rotate(-45deg); display: inline-block;">⚲</span>
+                            </div>
                         </div>
-                    </a>
-                    <a href="Projects Pages/doc2db.html" class="gallery-card">
-                        <img src="Projects Pages/assets/doc2db_Cover.png" alt="Doc2DB Pipeline"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">Doc2DB Pipeline</span>
-                            <span class="gallery-card-domain">Domain: Automation</span>
+
+                        <div class="gallery-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(215px,1r)); gap: 16px; margin-top: 0;">
+                            <a href="Projects Pages/calcinsight.html" class="gallery-card">
+                                <img src="Projects Pages/assets/CalcInsight_Cover.png" alt="CalcInsight"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title">CalcInsight</span>
+                                    <span class="gallery-card-domain">Domain: API Observability</span>
+                                </div>
+                            </a>
+                            <a href="Projects Pages/doc2db.html" class="gallery-card">
+                                <img src="Projects Pages/assets/doc2db_Cover.png" alt="Doc2DB Pipeline"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title">Doc2DB Pipeline</span>
+                                    <span class="gallery-card-domain">Domain: Automation</span>
+                                </div>
+                            </a>
+                            <a href="Projects Pages/ticketsense.html" class="gallery-card">
+                                <img src="Projects Pages/assets/ticketsense_Cover.png" alt="TicketSense"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title">TicketSense</span>
+                                    <span class="gallery-card-domain">Domain: Workflow Automation</span>
+                                </div>
+                            </a>
+                            <a href="Projects Pages/pulseguard.html" class="gallery-card">
+                                <img src="Projects Pages/assets/pulseguard_Cover.png" alt="PulseGuard"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title">PulseGuard</span>
+                                    <span class="gallery-card-domain">Domain: Monitoring</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="Projects Pages/ticketsense.html" class="gallery-card">
-                        <img src="Projects Pages/assets/ticketsense_Cover.png" alt="TicketSense"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">TicketSense</span>
-                            <span class="gallery-card-domain">Domain: Workflow Automation</span>
-                        </div>
-                    </a>
-                    <a href="Projects Pages/pulseguard.html" class="gallery-card">
-                        <img src="Projects Pages/assets/pulseguard_Cover.png" alt="PulseGuard"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">PulseGuard</span>
-                            <span class="gallery-card-domain">Domain: Monitoring</span>
-                        </div>
-                    </a>
+                    </div>
                 </div>
 
                 <!-- Featured Projects -->
-                <h3 class="section-title">Featured Projects</h3>
-                <details class="notion-toggle">
-                    <summary>Summary</summary>
-                    <div class="toggle-content">
-                        <p>Focus on data validation and API integration systems.</p>
+                <div class="featured-projects-section" style="display: flex; gap: 48px; align-items: flex-start;">
+                    <!-- Left Column -->
+                    <div class="featured-left" style="flex: 1; min-width: 300px;">
+                        <h3 class="section-title">Featured Projects</h3>
+                        <details class="notion-toggle" open>
+                            <summary>Summary</summary>
+                            <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                                <p style="font-size: 13px; line-height: 1.6; color: var(--text-color);">
+                                    Highlights of offering solutions where I improved system reliability, streamlined
+                                    workflows, and delivered measurable business value through user-focused, data-driven
+                                    initiatives. These projects involved analyzing complex APIs, monitoring
+                                    multi-environment performance, standardizing critical medical data, and automating
+                                    operational and testing processes. By bridging business requirements with technical
+                                    implementation, I helped reduce manual effort, improve accuracy, and enhance release
+                                    readiness. Collectively, these initiatives strengthened system stability, improved
+                                    cross-team collaboration, and supported faster, more reliable delivery.
+                                </p>
+                            </div>
+                        </details>
                     </div>
-                </details>
-                <div class="gallery-grid">
-                    <a href="Projects Pages/apipulse.html" class="gallery-card">
-                        <img src="Projects Pages/assets/ApiPulse_Cover.png" alt="API Pulse"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">API Pulse</span>
-                            <span class="gallery-card-domain">Domain: Data Validation Systems</span>
+
+                    <!-- Right Column -->
+                    <div class="featured-right" style="flex: 2; min-width: 0;">
+                        <!-- Right column header (Notion style) -->
+                        <div class="notion-tabs-header"
+                            style="display: flex; justify-content: space-between; align-items: center; border-bottom: none; margin-bottom: 16px;">
+                            <div style="display: flex; align-items: center;">
+                                <span
+                                    style="font-size: 14px; color: var(--text-color); padding: 4px 8px; background-color: rgba(255,255,255,0.08); border-radius: 4px;">🗃</span>
+                            </div>
+                            <div class="notion-view-actions"
+                                style="display: flex; gap: 16px; color: var(--text-muted); font-size: 16px;">
+                                <span
+                                    style="cursor: pointer; color: #50a0ff; font-weight: bold; transform: scaleY(0.8); display: inline-block;">≡</span>
+                                <span style="cursor: pointer; font-size: 14px; font-weight: bold;">⇅</span>
+                                <span
+                                    style="cursor: pointer; font-size: 14px; transform: rotate(-45deg); display: inline-block;">⚲</span>
+                            </div>
                         </div>
-                    </a>
-                    <a href="Projects Pages/flagsight.html" class="gallery-card">
-                        <img src="Projects Pages/assets/flagsight_Cover.png" alt="FlagSight"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">FlagSight</span>
-                            <span class="gallery-card-domain">Domain: Feature Flag Management</span>
+
+                        <div class="gallery-grid"
+                            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 0;">
+                            <a href="Projects Pages/apipulse.html" class="gallery-card">
+                                <img src="Projects Pages/assets/ApiPulse_Cover.png" alt="API Pulse"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title" style="font-size: 13px; line-height: 1.4;">API
+                                        Pulse - Real-Time Monitoring & Failure Intelligence System</span>
+                                    <span class="gallery-card-domain">Domain: Data Validation Systems</span>
+                                </div>
+                            </a>
+                            <a href="Projects Pages/flagsight.html" class="gallery-card">
+                                <img src="Projects Pages/assets/flagsight_Cover.png" alt="FlagSight"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title"
+                                        style="font-size: 13px; line-height: 1.4;">FlagSight - Automated API Flag
+                                        Validation & Audit Engine</span>
+                                    <span class="gallery-card-domain">Domain: Feature Flag Management</span>
+                                </div>
+                            </a>
+                            <a href="Projects Pages/preapi-validation.html" class="gallery-card">
+                                <img src="Projects Pages/assets/preapi_cover.png" alt="Pre-API Validation Engine"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title" style="font-size: 13px; line-height: 1.4;">Pre-API
+                                        Validation Engine</span>
+                                    <span class="gallery-card-domain">Domain: Security & Compliance</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="Projects Pages/preapi-validation.html" class="gallery-card">
-                        <img src="Projects Pages/assets/preapi_cover.png"
-                            alt="Pre-API Validation Engine" class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">Pre-API Validation Engine</span>
-                            <span class="gallery-card-domain">Domain: Security & Compliance</span>
-                        </div>
-                    </a>
+                    </div>
                 </div>
 
                 <hr class="notion-divider">
@@ -148,71 +222,67 @@
                 <!-- Professional Experience -->
                 <h3 class="section-title">Professional Experience</h3>
 
-                <details class="notion-toggle">
-                    <summary>Associate Business Analyst | Newgen Software Technologies Limited, Noida</summary>
-                    <div class="toggle-content">
-                        <p><strong>July 2024 - Present</strong></p>
-                        <ul>
-                            <li>Focus on requirements gathering, technical specs for low-code platforms, and UAT
-                                support.</li>
-                        </ul>
-                    </div>
-                </details>
+                <div class="experience-list" style="display: flex; flex-direction: column; gap: 16px;">
+                    <details class="notion-toggle">
+                        <summary>Associate Business Analyst | Newgen Software Technologies Limited, Noida</summary>
+                        <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                            <p style="font-style: italic; font-size: 13px; color: var(--text-color);">July 2024 -
+                                Present</p>
+                        </div>
+                    </details>
 
-                <details class="notion-toggle">
-                    <summary>Application Engineer Trainee | Newgen Software Technologies Limited, Noida</summary>
-                    <div class="toggle-content">
-                        <p><strong>Jan 2024 - July 2024</strong></p>
-                        <ul>
-                            <li>SDLC exposure, low-code application configuration, and technical workshops.</li>
-                        </ul>
-                    </div>
-                </details>
+                    <details class="notion-toggle">
+                        <summary>Application Engineer Trainee | Newgen Software Technologies Limited, Noida</summary>
+                        <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                            <p style="font-style: italic; font-size: 13px; color: var(--text-color);">January 2024 -
+                                July 2024</p>
+                        </div>
+                    </details>
 
-                <details class="notion-toggle">
-                    <summary>Business Development Executive | Emotech Software Solutions, Gwalior</summary>
-                    <div class="toggle-content">
-                        <p><strong>Jan 2023 - Jan 2024, Part-time</strong></p>
-                        <ul>
-                            <li>Market research, lead generation, and client relationship management.</li>
-                        </ul>
-                    </div>
-                </details>
+                    <details class="notion-toggle">
+                        <summary>Business Development Executive | Emotech Software Solutions Pvt. Ltd, Gwalior</summary>
+                        <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                            <p style="font-style: italic; font-size: 13px; color: var(--text-color);">January 2023 -
+                                January 2024 (Part Time)</p>
+                        </div>
+                    </details>
 
-                <details class="notion-toggle">
-                    <summary>Content Developer Intern | Doubtnut Class 21a Technologies</summary>
-                    <div class="toggle-content">
-                        <ul>
-                            <li>Educational content creation and quality assurance.</li>
-                        </ul>
-                    </div>
-                </details>
+                    <details class="notion-toggle">
+                        <summary>Content Developer Intern | Doubtnut-Class 21a Technologies Private Limited</summary>
+                        <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                            <p style="font-style: italic; font-size: 13px; color: var(--text-color);">August 2021 -
+                                October 2021</p>
+                        </div>
+                    </details>
+                </div>
 
                 <hr class="notion-divider">
 
                 <!-- Academic History -->
                 <h3 class="section-title">Academic History</h3>
 
-                <details class="notion-toggle">
-                    <summary>Bachelor of Technology</summary>
-                    <div class="toggle-content">
-                        <ul>
-                            <li>Automobile Engineering | Madhav Institute of Technology and Science (MITS), Gwalior</li>
-                            <li>CGPA: 7.6/10 | 2020 - 2024</li>
-                        </ul>
-                    </div>
-                </details>
+                <div class="experience-list" style="display: flex; flex-direction: column; gap: 16px;">
+                    <details class="notion-toggle">
+                        <summary>Bachelor of Technology</summary>
+                        <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                            <p style="font-size: 14px; color: var(--text-color); margin-bottom: 12px;">Automobile
+                                Engineering | Madhav Institute of Technology and Science, Gwalior</p>
+                            <p style="font-size: 14px; color: var(--text-color);">CGPA: 7.6/10 | July 2020 - July 2024
+                            </p>
+                        </div>
+                    </details>
 
-                <details class="notion-toggle">
-                    <summary>Secondary Education</summary>
-                    <div class="toggle-content">
-                        <ul>
-                            <li>St. Joseph’s Senior Secondary School, Pipariya</li>
-                            <li>Class XII (PCM): 80% (2020)</li>
-                            <li>Class X: 80% (2018)</li>
-                        </ul>
-                    </div>
-                </details>
+                    <details class="notion-toggle">
+                        <summary>Secondary Education</summary>
+                        <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                            <p style="font-size: 14px; color: var(--text-color); margin-bottom: 12px;">St. Joseph's
+                                Senior Secondary School, Pipariya, M.P.</p>
+                            <p style="font-size: 14px; color: var(--text-color); margin-bottom: 12px;">Class XII (PCM),
+                                CBSE | 2020 | 80%</p>
+                            <p style="font-size: 14px; color: var(--text-color);">Class X, CBSE | 2018 | 80%</p>
+                        </div>
+                    </details>
+                </div>
 
                 <hr class="notion-divider">
 
@@ -220,35 +290,52 @@
                 <h3 class="section-title">Skills & Tools</h3>
 
                 <div class="tabs-container">
-                    <div class="tabs-header">
-                        <button class="tab-btn active" data-tab="core-skills">Core Skills</button>
-                        <button class="tab-btn" data-tab="tools-tech">Tools & Technologies</button>
+                    <div class="tabs-header notion-tabs-header"
+                        style="display: flex; justify-content: space-between; align-items: center; border-bottom: none; margin-bottom: 20px;">
+                        <div style="display: flex; gap: 16px;">
+                            <button class="tab-btn active notion-tab-btn" data-tab="core-skills"><span
+                                    style="font-size: 14px; margin-right: 4px;">☑</span> Core Skills</button>
+                            <button class="tab-btn notion-tab-btn" data-tab="tools-tech"><span
+                                    style="font-size: 14px; margin-right: 4px;">🌟</span> Tools & Technologies</button>
+                        </div>
+                        <div class="notion-view-actions"
+                            style="display: flex; gap: 16px; color: var(--text-muted); font-size: 16px;">
+                            <span
+                                style="cursor: pointer; color: #50a0ff; font-weight: bold; transform: scaleY(0.8); display: inline-block;">≡</span>
+                            <span style="cursor: pointer; font-size: 14px; font-weight: bold;">⇅</span>
+                            <span
+                                style="cursor: pointer; font-size: 14px; transform: rotate(-45deg); display: inline-block;">⚲</span>
+                        </div>
                     </div>
 
                     <div class="tab-content active" id="core-skills">
-                        <ul class="skills-list">
-                            <li>Business Analysis</li>
-                            <li>Documentation</li>
-                            <li>System Integration</li>
-                            <li>Project Management</li>
-                            <li>Data & Analytics</li>
-                            <li>Power BI</li>
-                            <li>MS Excel</li>
-                            <li>SQL</li>
-                            <li>Postman</li>
-                            <li>MS Visio</li>
-                            <li>User Stories</li>
-                            <li>Gap Analysis</li>
-                        </ul>
+                        <div class="skills-grid">
+                            <div class="skill-badge"><span class="skill-icon">📄</span> Business Analysis</div>
+                            <div class="skill-badge"><span class="skill-icon">📄</span> Documentation</div>
+                            <div class="skill-badge"><span class="skill-icon">🗂</span> System Integration</div>
+                            <div class="skill-badge"><span class="skill-icon">🪟</span> Project Management</div>
+                            <div class="skill-badge"><span class="skill-icon">🔭</span> Data & Analytics</div>
+                            <div class="skill-badge"><span class="skill-icon">🔭</span> Power BI</div>
+                            <div class="skill-badge"><span class="skill-icon">🔭</span> MS Excel</div>
+                            <div class="skill-badge"><span class="skill-icon">🔭</span> SQL</div>
+                            <div class="skill-badge"><span class="skill-icon"
+                                    style="opacity: 0; width: 0; margin: 0;"></span>Postman</div>
+                            <div class="skill-badge"><span class="skill-icon"
+                                    style="opacity: 0; width: 0; margin: 0;"></span>MS Visio</div>
+                            <div class="skill-badge"><span class="skill-icon"
+                                    style="opacity: 0; width: 0; margin: 0;"></span>User Stories</div>
+                            <div class="skill-badge"><span class="skill-icon"
+                                    style="opacity: 0; width: 0; margin: 0;"></span>Gap Analysis</div>
+                        </div>
                     </div>
 
                     <div class="tab-content" id="tools-tech">
-                        <ul class="skills-list">
-                            <li>JIRA</li>
-                            <li>Notion</li>
-                            <li>Lucidchart</li>
-                            <li>Salesforce Platform</li>
-                        </ul>
+                        <div class="skills-grid">
+                            <div class="skill-badge"><span class="skill-icon">☂</span> JIRA</div>
+                            <div class="skill-badge"><span class="skill-icon">📓</span> Notion</div>
+                            <div class="skill-badge"><span class="skill-icon">✏</span> Lucidchart</div>
+                            <div class="skill-badge"><span class="skill-icon">🌐</span> Salesforce Platform</div>
+                        </div>
                     </div>
                 </div>
 
@@ -257,22 +344,22 @@
                 <!-- Certifications & Achievements -->
                 <h3 class="section-title">Certifications & Achievements</h3>
                 <div class="gallery-grid">
-                    <a href="#" class="gallery-card">
-                        <img src="https://via.placeholder.com/400x200/222222/555555?text=Newgen+Award"
+                    <a href="Certificates/NewgenHighFive.jpg" target="_blank" class="gallery-card">
+                        <img src="Certificates/NewgenHighFive_Cover.jpg"
                             alt="Newgen High-Five Award" class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">Newgen High-Five Award</span>
                         </div>
                     </a>
                     <a href="Certificates/java udemy.pdf" target="_blank" class="gallery-card">
-                        <img src="https://via.placeholder.com/400x200/222222/555555?text=Java"
+                        <img src="Certificates/java udemy_Cover.jpg"
                             alt="The Complete Java Development" class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">The Complete Java Development</span>
                         </div>
                     </a>
                     <a href="Certificates/Sql udem.pdf" target="_blank" class="gallery-card">
-                        <img src="https://via.placeholder.com/400x200/222222/555555?text=SQL" alt="SQL for beginners"
+                        <img src="Certificates/Sql udem_Cover.jpg" alt="SQL for beginners"
                             class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">SQL for beginners</span>
@@ -285,7 +372,7 @@
                         </div>
                     </a>
                     <a href="Certificates/Shankhnaad CAP.pdf" target="_blank" class="gallery-card">
-                        <img src="https://via.placeholder.com/400x200/222222/555555?text=Ambassador"
+                        <img src="Certificates/Shankhnaad CAP_Cover.jpg"
                             alt="Campus Ambassador" class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">Campus Ambassador</span>
@@ -296,28 +383,64 @@
                 <hr class="notion-divider">
 
                 <!-- Engineering and 3D Design -->
-                <h3 class="section-title">Engineering and 3D Design</h3>
-                <div class="gallery-grid">
-                    <a href="Projects Pages/3d-modelling.html" class="gallery-card">
-                        <img src="Projects Pages/assets/Modelling.png" alt="3D Modelling" class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">3D Modelling</span>
+                <div class="featured-projects-section" style="display: flex; gap: 48px; align-items: flex-start;">
+                    <!-- Left Column -->
+                    <div class="featured-left" style="flex: 1; min-width: 300px;">
+                        <h3 class="section-title">Engineering and 3D Design</h3>
+                        <details class="notion-toggle" open>
+                            <summary>Summary</summary>
+                            <div class="toggle-content" style="padding-top: 0; padding-bottom: 0;">
+                                <p style="font-size: 13px; line-height: 1.6; color: var(--text-color);">
+                                    [Summary to be added]
+                                </p>
+                            </div>
+                        </details>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="featured-right" style="flex: 2; min-width: 0;">
+                        <!-- Right column header (Notion style) -->
+                        <div class="notion-tabs-header"
+                            style="display: flex; justify-content: space-between; align-items: center; border-bottom: none; margin-bottom: 16px;">
+                            <div style="display: flex; align-items: center;">
+                                <span
+                                    style="font-size: 14px; color: var(--text-color); padding: 4px 8px; background-color: rgba(255,255,255,0.08); border-radius: 4px;">🗃</span>
+                            </div>
+                            <div class="notion-view-actions"
+                                style="display: flex; gap: 16px; color: var(--text-muted); font-size: 16px;">
+                                <span
+                                    style="cursor: pointer; color: #50a0ff; font-weight: bold; transform: scaleY(0.8); display: inline-block;">≡</span>
+                                <span style="cursor: pointer; font-size: 14px; font-weight: bold;">⇅</span>
+                                <span
+                                    style="cursor: pointer; font-size: 14px; transform: rotate(-45deg); display: inline-block;">⚲</span>
+                            </div>
                         </div>
-                    </a>
-                    <a href="Projects Pages/simulation.html" class="gallery-card">
-                        <img src="Projects Pages/assets/Simulation.jfif" alt="Simulation and Analysis"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">Simulation and Analysis</span>
+
+                        <div class="gallery-grid"
+                            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; margin-top: 0;">
+                            <a href="Projects Pages/3d-modelling.html" class="gallery-card">
+                                <img src="Projects Pages/assets/Modelling.png" alt="3D Modelling"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title">3D Modelling</span>
+                                </div>
+                            </a>
+                            <a href="Projects Pages/simulation.html" class="gallery-card">
+                                <img src="Projects Pages/assets/Simulation.jfif" alt="Simulation and Analysis"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title">Simulation and Analysis</span>
+                                </div>
+                            </a>
+                            <a href="Projects Pages/rendering.html" class="gallery-card">
+                                <img src="Projects Pages/assets/Rendering.png" alt="Rendering & Visualization"
+                                    class="gallery-card-image">
+                                <div class="gallery-card-content">
+                                    <span class="gallery-card-title">Rendering & Visualization</span>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="Projects Pages/rendering.html" class="gallery-card">
-                        <img src="Projects Pages/assets/Rendering.png" alt="Rendering & Visualization"
-                            class="gallery-card-image">
-                        <div class="gallery-card-content">
-                            <span class="gallery-card-title">Rendering & Visualization</span>
-                        </div>
-                    </a>
+                    </div>
                 </div>
 
                 <hr class="notion-divider">
@@ -346,8 +469,8 @@
                         <div class="footer-link-block">
                             <span class="footer-icon">📎</span>
                             <span><strong>View my resume:</strong> <a
-                                    href="https://www.notion.so/Aditya-s-Portfolio-2cfcf2e33abf80edb74ddb4e4318f158?pvs=21"
-                                    target="_blank">Aditya's Portfolio</a></span>
+                                    href="https://drive.google.com/drive/folders/1LVRGQH895Tv9kURvZ2pmlfb_qJI8-uvn?usp=sharing"
+                                    target="_blank">Resume<span>
                         </div>
                     </div>
 

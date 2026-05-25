@@ -45,10 +45,11 @@ a:hover {
 }
 
 .portfolio-main-title {
-    font-size: 32px;
+    font-size: 48px;
     font-weight: 700;
     margin-top: 64px;
     margin-bottom: 40px;
+    letter-spacing: -0.02em;
 }
 
 .profile-section-new {
@@ -75,8 +76,8 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.7;
 }
 
 .profile-greeting {
@@ -92,7 +93,7 @@ a:hover {
 }
 
 .profile-bullet-list li {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-color);
 }
 
@@ -104,7 +105,7 @@ a:hover {
 }
 
 .new-contact .contact-item {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-color);
 }
 
@@ -231,19 +232,20 @@ a:hover {
 }
 
 .gallery-card-title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
 }
 
 .gallery-card-domain {
-    font-size: 12px;
+    font-size: 14px;
     color: var(--text-muted);
 }
 
 .section-title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 600;
-    margin-bottom: 16px;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
 }
 
 /* Tabs */
@@ -263,7 +265,7 @@ a:hover {
     color: var(--text-muted);
     padding: 8px 16px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     font-family: inherit;
     position: relative;
@@ -307,7 +309,7 @@ a:hover {
 
 .footer-text {
     margin-bottom: 24px;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 .footer-callout {
@@ -323,7 +325,7 @@ a:hover {
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .footer-link-block a {
@@ -340,7 +342,7 @@ a:hover {
 }
 
 .footer-note {
-    font-size: 14px;
+    font-size: 15px;
     color: var(--text-muted);
     text-align: center;
 }
@@ -373,7 +375,7 @@ a:hover {
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.2s ease, border-color 0.2s ease;
@@ -387,4 +389,21 @@ a:hover {
 
 .skill-icon {
     font-size: 14px;
+}
+
+/* --- Layout Enhancements --- */
+.featured-projects-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+    align-items: flex-start;
+    margin-bottom: 80px;
+}
+
+.featured-left {
+    flex: 1 1 300px;
+}
+
+.featured-right {
+    flex: 2 1 450px;
 }

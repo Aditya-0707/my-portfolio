@@ -55,7 +55,7 @@ a:hover {
 .profile-section-new {
     display: flex;
     gap: 48px;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     align-items: flex-start;
 }
 
@@ -99,9 +99,13 @@ a:hover {
 
 .new-contact {
     display: flex;
-    flex-direction: column;
-    margin-top: 24px;
-    gap: 12px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    /* Change to flex-start for left align, center for center align */
+    margin-top: 0;
+    margin-bottom: 24px;
+    gap: 90px;
 }
 
 .new-contact .contact-item {

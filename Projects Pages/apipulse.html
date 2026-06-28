@@ -56,6 +56,80 @@
         </p>
       </div>
     </section>
+    <!-- ========== Workflow Diagram ========== -->
+    <section class="workflow" id="workflow">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">Real-Time Monitoring Pipeline</h2>
+        <p class="section-desc reveal">
+          API Pulse follows a continuous monitoring loop that captures, analyzes, and alerts on API performance in real-time.
+        </p>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">01</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><path d="M24 8v8M24 16l8 8M24 16l-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="30" r="10" stroke="currentColor" stroke-width="2"/><path d="M20 30h8M24 26v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/></svg>
+            </div>
+            <h4 class="wf-card-title">API Data Capture</h4>
+            <p class="wf-card-desc">Google Apps Script captures real-time response data from 9 APIs across SIT, UAT, and Production environments.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">02</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="32" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M8 18h32" stroke="currentColor" stroke-width="2"/><path d="M16 24h16M16 30h12M16 36h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><circle cx="36" cy="10" r="4" fill="currentColor" opacity="0.3"/><path d="M34 10h4" stroke="currentColor" stroke-width="1" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Log Storage & Retention</h4>
+            <p class="wf-card-desc">API responses, timestamps, and status codes are logged into Google Sheets with 24-hour rolling retention.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">03</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/><path d="M12 32V22M20 32V18M28 32V24M36 32V16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Performance Analytics</h4>
+            <p class="wf-card-desc">Real-time and 24-hour average response times are computed; load distribution is analyzed per API.</p>
+          </div>
+        </div>
+
+        <div class="wf-turn-connector reveal">
+          <div class="wf-turn-right"><div class="wf-turn-vert"></div></div>
+          <div class="wf-turn-horiz"></div>
+          <div class="wf-turn-left"><div class="wf-turn-vert"></div><svg class="wf-turn-arrow" viewBox="0 0 16 16" width="14" height="14"><path d="M4 4L8 12L12 4" fill="currentColor"/></svg></div>
+        </div>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">04</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><circle cx="18" cy="24" r="10" stroke="currentColor" stroke-width="2"/><circle cx="32" cy="24" r="10" stroke="currentColor" stroke-width="2"/><path d="M24 18v12" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.6"/></svg>
+            </div>
+            <h4 class="wf-card-title">BRMS Rule Correlation</h4>
+            <p class="wf-card-desc">API performance is mapped against BRMS rule execution logs to identify parameter conflicts and rule inefficiencies.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">05</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="24" rx="3" stroke="currentColor" stroke-width="2"/><path d="M12 20l6-6 4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="14" y="36" width="20" height="4" rx="2" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h4 class="wf-card-title">Dashboard Visualization</h4>
+            <p class="wf-card-desc">Custom frontend renders live graphs, tables, and API-wise performance visualizations for real-time monitoring.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card wf-card--final">
+            <div class="wf-card-badge">06</div>
+            <div class="wf-card-icon-wrap wf-card-icon-wrap--final">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><path d="M24 8v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2"/><path d="M24 18v6l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 38l4-4M38 38l-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Failure Alert & Notification</h4>
+            <p class="wf-card-desc">Automated alerts dispatched via Microsoft Teams and email when downtime or threshold breaches are detected.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ========== Challenge ========== -->
     <section class="challenge" id="challenge">

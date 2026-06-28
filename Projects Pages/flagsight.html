@@ -46,6 +46,81 @@
       </div>
     </section>
 
+    <!-- ========== Workflow Diagram ========== -->
+    <section class="workflow" id="workflow">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">Validation Pipeline</h2>
+        <p class="section-desc reveal">
+          FlagSight automates the entire flag validation lifecycle — from bulk case input to client-ready audit reports.
+        </p>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">01</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="32" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 16h12M18 22h12M18 28h12M18 34h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10 8l6-2v4l-6-2z" fill="currentColor" opacity="0.4"/></svg>
+            </div>
+            <h4 class="wf-card-title">Bulk Case Input</h4>
+            <p class="wf-card-desc">Users input 600+ production case IDs in bulk through the web-based UI interface.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">02</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="16" rx="12" ry="6" stroke="currentColor" stroke-width="2"/><path d="M12 16v14c0 3.3 5.4 6 12 6s12-2.7 12-6V16" stroke="currentColor" stroke-width="2"/><path d="M36 30l6-2M36 24l6-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/></svg>
+            </div>
+            <h4 class="wf-card-title">Database Connection</h4>
+            <p class="wf-card-desc">Automated connection to the production database to extract relevant case data for each submitted ID.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">03</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><path d="M14 12h4v24h-4zM30 12h4v24h-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M22 18h4M22 24h4M22 30h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/><path d="M24 8l6 4H18l6-4z" fill="currentColor" opacity="0.3"/></svg>
+            </div>
+            <h4 class="wf-card-title">JSON Response Parsing</h4>
+            <p class="wf-card-desc">API response JSONs from 8+ dependent insurance APIs are intelligently parsed for each case.</p>
+          </div>
+        </div>
+
+        <div class="wf-turn-connector reveal">
+          <div class="wf-turn-right"><div class="wf-turn-vert"></div></div>
+          <div class="wf-turn-horiz"></div>
+          <div class="wf-turn-left"><div class="wf-turn-vert"></div><svg class="wf-turn-arrow" viewBox="0 0 16 16" width="14" height="14"><path d="M4 4L8 12L12 4" fill="currentColor"/></svg></div>
+        </div>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">04</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="10" width="28" height="28" rx="14" stroke="currentColor" stroke-width="2"/><path d="M20 24l4 4 8-8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Flag Validation Engine</h4>
+            <p class="wf-card-desc">CRC/PIVC decision flags are validated against predefined business logic rules to detect incorrect triggers.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">05</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="12" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="8" y="24" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="20" y="12" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="20" y="24" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="32" y="12" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="32" y="24" width="10" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M24 36v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 40h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Bulk Processing</h4>
+            <p class="wf-card-desc">All 600+ cases are processed through the validation pipeline in batch mode via GAS backend.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card wf-card--final">
+            <div class="wf-card-badge">06</div>
+            <div class="wf-card-icon-wrap wf-card-icon-wrap--final">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="6" width="28" height="36" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 14h12M18 20h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="24" cy="32" r="6" stroke="currentColor" stroke-width="2"/><path d="M22 32l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Audit Report Generation</h4>
+            <p class="wf-card-desc">Structured, client-ready audit reports are auto-generated summarizing validation results for all cases.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== Challenge ========== -->
     <section class="challenge" id="challenge">
       <div class="container">

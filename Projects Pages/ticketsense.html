@@ -56,6 +56,80 @@
         </p>
       </div>
     </section>
+    <!-- ========== Workflow Diagram ========== -->
+    <section class="workflow-diagram" id="workflow-diagram">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">Intelligent Routing Pipeline</h2>
+        <p class="section-desc reveal">
+          TicketSense monitors, classifies, and routes JIRA tickets in real-time — eliminating manual triage entirely.
+        </p>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">01</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/><circle cx="24" cy="24" r="2" fill="currentColor"/><path d="M24 10v4M24 34v4M10 24h4M34 24h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/></svg>
+            </div>
+            <h4 class="wf-card-title">Ticket Monitoring</h4>
+            <p class="wf-card-desc">Python bot continuously monitors JIRA for newly created tickets via JIRA REST APIs in real-time.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">02</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="32" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 16h12M18 22h8M18 28h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="34" r="6" stroke="currentColor" stroke-width="2"/><path d="M38 38l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Description Parsing</h4>
+            <p class="wf-card-desc">Ticket descriptions and metadata are parsed to extract relevant keywords and contextual information.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">03</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><path d="M12 14h8v6h-8zM20 14h8v6h-8zM28 14h8v6h-8z" stroke="currentColor" stroke-width="1.5" rx="2"/><path d="M24 20v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 28h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 28v6M24 28v6M34 28v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Category Classification</h4>
+            <p class="wf-card-desc">Keyword-based engine identifies the domain — Medical, Non-Medical, DDU, IIB, AOL, NSDL, and more.</p>
+          </div>
+        </div>
+
+        <div class="wf-turn-connector reveal">
+          <div class="wf-turn-right"><div class="wf-turn-vert"></div></div>
+          <div class="wf-turn-horiz"></div>
+          <div class="wf-turn-left"><div class="wf-turn-vert"></div><svg class="wf-turn-arrow" viewBox="0 0 16 16" width="14" height="14"><path d="M4 4L8 12L12 4" fill="currentColor"/></svg></div>
+        </div>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">04</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="16" r="8" stroke="currentColor" stroke-width="2"/><path d="M16 30c0-4.4 3.6-8 8-8s8 3.6 8 8" stroke="currentColor" stroke-width="2"/><path d="M24 24v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20 36h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M10 20l4 4M38 20l-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/></svg>
+            </div>
+            <h4 class="wf-card-title">Owner Mapping</h4>
+            <p class="wf-card-desc">Each category is mapped to a predefined team member based on routing rules configuration.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">05</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="10" width="20" height="14" rx="3" stroke="currentColor" stroke-width="2"/><path d="M30 17c4 0 8 3 8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M36 21l2 4 4-2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="36" r="6" stroke="currentColor" stroke-width="2"/><path d="M24 30v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Auto-Reassignment</h4>
+            <p class="wf-card-desc">Ticket is automatically reassigned from the default manager to the correct owner via JIRA API in seconds.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card wf-card--final">
+            <div class="wf-card-badge">06</div>
+            <div class="wf-card-icon-wrap wf-card-icon-wrap--final">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><path d="M10 14h28v20H10z" stroke="currentColor" stroke-width="2" rx="3"/><path d="M10 14l14 10 14-10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 26h12M18 30h8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4"/></svg>
+            </div>
+            <h4 class="wf-card-title">Teams Notification</h4>
+            <p class="wf-card-desc">Instant notifications with ticket details and assignment info are sent to Microsoft Teams via webhooks.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ========== Challenge ========== -->
     <section class="challenge" id="challenge">

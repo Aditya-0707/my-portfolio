@@ -56,6 +56,80 @@
         </p>
       </div>
     </section>
+    <!-- ========== Workflow Diagram ========== -->
+    <section class="workflow-new" id="workflow-new">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">The Automation Pipeline</h2>
+        <p class="section-desc reveal">
+          Doc2DB converts unstructured client documents into deployment-ready database outputs through a six-stage automated pipeline.
+        </p>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">01</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="6" width="28" height="36" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 14h12M18 20h8M18 26h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M30 38l-6-4v8l6-4z" fill="currentColor" opacity="0.4"/></svg>
+            </div>
+            <h4 class="wf-card-title">Document Input</h4>
+            <p class="wf-card-desc">User pastes unstructured content from client DOCX requirement documents into the web-based UI.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">02</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="8" y="10" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/><rect x="28" y="10" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/><rect x="8" y="28" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/><rect x="28" y="28" width="12" height="10" rx="2" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5" stroke-dasharray="2 2"/></svg>
+            </div>
+            <h4 class="wf-card-title">Table Detection & Extraction</h4>
+            <p class="wf-card-desc">System detects and sequentially extracts all embedded tables and tabular patterns from the raw text.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">03</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="6" y="10" width="16" height="12" rx="2" stroke="currentColor" stroke-width="2"/><rect x="6" y="26" width="16" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M26 24h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M32 20l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M38 14h2M38 20h2M38 26h2M38 32h2M38 38h2" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Matrix-to-Linear Transformation</h4>
+            <p class="wf-card-desc">Unstructured matrix-style tables are converted into normalized, linear data formats for processing.</p>
+          </div>
+        </div>
+
+        <div class="wf-turn-connector reveal">
+          <div class="wf-turn-right"><div class="wf-turn-vert"></div></div>
+          <div class="wf-turn-horiz"></div>
+          <div class="wf-turn-left"><div class="wf-turn-vert"></div><svg class="wf-turn-arrow" viewBox="0 0 16 16" width="14" height="14"><path d="M4 4L8 12L12 4" fill="currentColor"/></svg></div>
+        </div>
+
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">04</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2"/><path d="M20 24h8M24 20v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M14 14l-4-4M34 14l4-4M14 34l-4 4M34 34l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">Rule-Based Formatting</h4>
+            <p class="wf-card-desc">Predefined client-specific transformation rules are applied to standardize the extracted data.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card">
+            <div class="wf-card-badge">05</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><ellipse cx="24" cy="16" rx="14" ry="6" stroke="currentColor" stroke-width="2"/><path d="M10 16v16c0 3.3 6.3 6 14 6s14-2.7 14-6V16" stroke="currentColor" stroke-width="2"/><path d="M10 24c0 3.3 6.3 6 14 6s14-2.7 14-6" stroke="currentColor" stroke-width="1.5" opacity="0.4"/></svg>
+            </div>
+            <h4 class="wf-card-title">DB Schema Generation</h4>
+            <p class="wf-card-desc">Database table schemas are automatically generated from the transformed data structure.</p>
+          </div>
+          <div class="wf-arrow-h reveal"><div class="wf-arrow-line"></div><svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg></div>
+          <div class="wf-card wf-card--final">
+            <div class="wf-card-badge">06</div>
+            <div class="wf-card-icon-wrap wf-card-icon-wrap--final">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none"><rect x="10" y="8" width="28" height="32" rx="3" stroke="currentColor" stroke-width="2"/><path d="M18 16h12M18 22h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 30l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h4 class="wf-card-title">SQL Script Output</h4>
+            <p class="wf-card-desc">Ready-to-deploy SQL INSERT scripts are created for immediate database population and deployment.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- ========== Challenge ========== -->
     <section class="challenge" id="challenge">

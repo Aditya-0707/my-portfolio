@@ -57,6 +57,137 @@
       </div>
     </section>
 
+    <!-- ========== Workflow Diagram ========== -->
+    <section class="workflow" id="workflow">
+      <div class="container">
+        <span class="section-label reveal">How It Works</span>
+        <h2 class="section-heading reveal">End-to-End Diagnostic Pipeline</h2>
+        <p class="section-desc reveal">
+          CalcInsight follows a structured, multi-stage pipeline that transforms a raw API request into clear, actionable debugging intelligence.
+        </p>
+
+        <!-- Row 1: Steps 1 → 2 → 3 -->
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">01</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="6" width="32" height="36" rx="4" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 16h16M16 22h12M16 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                <path d="M24 36l-4-4h8l-4 4z" fill="currentColor" opacity="0.5"/>
+              </svg>
+            </div>
+            <h4 class="wf-card-title">API Request Input</h4>
+            <p class="wf-card-desc">User submits a complex BRMS JSON payload or triggers a live API call via the built-in simulation layer.</p>
+          </div>
+
+          <div class="wf-arrow-h reveal">
+            <div class="wf-arrow-line"></div>
+            <svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg>
+          </div>
+
+          <div class="wf-card">
+            <div class="wf-card-badge">02</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="20" r="12" stroke="currentColor" stroke-width="2"/>
+                <path d="M32 28l8 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M20 18l3 3 5-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4 class="wf-card-title">L1 Pre-Validation</h4>
+            <p class="wf-card-desc">The JSON passes through the L1 validation layer, catching structural errors and missing fields before deeper analysis.</p>
+          </div>
+
+          <div class="wf-arrow-h reveal">
+            <div class="wf-arrow-line"></div>
+            <svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg>
+          </div>
+
+          <div class="wf-card">
+            <div class="wf-card-badge">03</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="8" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+                <rect x="28" y="8" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+                <rect x="6" y="28" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+                <rect x="28" y="28" width="14" height="14" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M20 15h8M13 22v6M35 22v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="2 2"/>
+              </svg>
+            </div>
+            <h4 class="wf-card-title">JSON Decomposition</h4>
+            <p class="wf-card-desc">Deeply nested payloads are intelligently parsed and mapped to business entities — policies, riders, risk factors, and financial layers.</p>
+          </div>
+        </div>
+
+        <!-- L-shaped connector: 03 → down → left → 04 -->
+        <div class="wf-turn-connector reveal">
+          <div class="wf-turn-right">
+            <div class="wf-turn-vert"></div>
+          </div>
+          <div class="wf-turn-horiz"></div>
+          <div class="wf-turn-left">
+            <div class="wf-turn-vert"></div>
+            <svg class="wf-turn-arrow" viewBox="0 0 16 16" width="14" height="14"><path d="M4 4L8 12L12 4" fill="currentColor"/></svg>
+          </div>
+        </div>
+
+        <!-- Row 2: Steps 4 → 5 → 6 -->
+        <div class="wf-grid reveal">
+          <div class="wf-card">
+            <div class="wf-card-badge">04</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 32V22M20 32V18M28 32V24M36 32V16" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4 class="wf-card-title">Rule-Aligned Visualization</h4>
+            <p class="wf-card-desc">Decomposed data is rendered into structured tables and visual flows, aligned with BRMS rule logic for clear interpretation.</p>
+          </div>
+
+          <div class="wf-arrow-h reveal">
+            <div class="wf-arrow-line"></div>
+            <svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg>
+          </div>
+
+          <div class="wf-card">
+            <div class="wf-card-badge">05</div>
+            <div class="wf-card-icon-wrap">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="20" r="10" stroke="currentColor" stroke-width="2"/>
+                <circle cx="18" cy="18" r="2" fill="currentColor" opacity="0.5"/>
+                <circle cx="30" cy="18" r="2" fill="currentColor" opacity="0.5"/>
+                <circle cx="24" cy="14" r="2" fill="currentColor" opacity="0.5"/>
+                <path d="M18 18L24 14L30 18" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2"/>
+                <path d="M18 18L24 24L30 18" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2"/>
+                <path d="M16 32l4-4M32 32l-4-4M20 28h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h4 class="wf-card-title">AI-Augmented Analysis</h4>
+            <p class="wf-card-desc">AI-assisted mapping correlates inputs with rule outcomes, automatically flagging anomalies and calculation mismatches.</p>
+          </div>
+
+          <div class="wf-arrow-h reveal">
+            <div class="wf-arrow-line"></div>
+            <svg viewBox="0 0 16 16" width="16" height="16"><path d="M4 4L12 8L4 12" fill="currentColor"/></svg>
+          </div>
+
+          <div class="wf-card wf-card--final">
+            <div class="wf-card-badge">06</div>
+            <div class="wf-card-icon-wrap wf-card-icon-wrap--final">
+              <svg class="wf-svg-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2"/>
+                <path d="M16 24l5 5 11-12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h4 class="wf-card-title">Actionable Insights</h4>
+            <p class="wf-card-desc">Precise root cause identification enables resolution in under 10 minutes — down from hours of manual debugging.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ========== Challenge ========== -->
     <section class="challenge" id="challenge">
       <div class="container">

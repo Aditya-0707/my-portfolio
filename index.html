@@ -7,7 +7,7 @@
     <title>Aditya Pawar - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -15,12 +15,13 @@
     <div class="notion-page">
         <main class="content-wrapper">
             <!-- Header Title -->
-            <h1 class="portfolio-main-title">Aditya's Portfolio</h1>
+            <h1 class="portfolio-main-title"><span class="typewriter"></span><span class="typewriter-cursor">|</span></h1>
 
             <!-- Profile Section -->
             <header class="profile-section-new">
                 <div class="profile-left">
-                    <img src="Projects Pages/assets/HeroImages/ProfileImage.svg" alt="Aditya Pawar" class="profile-avatar-large">
+                    <img src="Projects Pages/assets/HeroImages/ProfileImage.svg" alt="Aditya Pawar"
+                        class="profile-avatar-large">
                 </div>
 
                 <div class="profile-right">
@@ -114,7 +115,7 @@
                         </div>
 
                         <div class="gallery-grid"
-                            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(215px,1r)); gap: 16px; margin-top: 0;">
+                            style="display: grid; grid-template-columns: repeat(auto-fill, minmax(215px,1fr)); gap: 16px; margin-top: 0;">
                             <a href="Projects Pages/calcinsight.html" class="gallery-card">
                                 <img src="Projects Pages/assets/CoverImages/CalcInsight_Cover.svg" alt="CalcInsight"
                                     class="gallery-card-image">
@@ -217,8 +218,8 @@
                                 </div>
                             </a>
                             <a href="Projects Pages/preapi-validation.html" class="gallery-card">
-                                <img src="Projects Pages/assets/CoverImages/PreAPI_Cover.svg" alt="Pre-API Validation Engine"
-                                    class="gallery-card-image">
+                                <img src="Projects Pages/assets/CoverImages/PreAPI_Cover.svg"
+                                    alt="Pre-API Validation Engine" class="gallery-card-image">
                                 <div class="gallery-card-content">
                                     <span class="gallery-card-title" style="font-size: 13px; line-height: 1.4;">Pre-API
                                         Validation Engine</span>
@@ -383,34 +384,34 @@
                 <!-- Certifications & Achievements -->
                 <h3 class="section-title">Certifications & Achievements</h3>
                 <div class="gallery-grid">
-                    <a href="Certificates/NewgenHighFive.jpg" target="_blank" class="gallery-card">
-                        <img src="Certificates/NewgenHighFive_Cover.jpg" alt="Newgen High-Five Award"
+                    <a href="../Certificates/NewgenHighFive.jpg" target="_blank" class="gallery-card">
+                        <img src="../Certificates/NewgenHighFive_Cover.jpg" alt="Newgen High-Five Award"
                             class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">Newgen High-Five Award</span>
                         </div>
                     </a>
-                    <a href="Certificates/java udemy.pdf" target="_blank" class="gallery-card">
-                        <img src="Certificates/java udemy_Cover.jpg" alt="The Complete Java Development"
+                    <a href="../Certificates/java udemy.pdf" target="_blank" class="gallery-card">
+                        <img src="../Certificates/java udemy_Cover.jpg" alt="The Complete Java Development"
                             class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">The Complete Java Development</span>
                         </div>
                     </a>
-                    <a href="Certificates/Sql udem.pdf" target="_blank" class="gallery-card">
-                        <img src="Certificates/Sql udem_Cover.jpg" alt="SQL for beginners" class="gallery-card-image">
+                    <a href="../Certificates/Sql udem.pdf" target="_blank" class="gallery-card">
+                        <img src="../Certificates/Sql udem_Cover.jpg" alt="SQL for beginners" class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">SQL for beginners</span>
                         </div>
                     </a>
-                    <a href="Certificates/python.jpeg" target="_blank" class="gallery-card">
-                        <img src="Certificates/python.jpeg" alt="Diploma Course in Python" class="gallery-card-image">
+                    <a href="../Certificates/python.jpeg" target="_blank" class="gallery-card">
+                        <img src="../Certificates/python.jpeg" alt="Diploma Course in Python" class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">Diploma Course in Python</span>
                         </div>
                     </a>
-                    <a href="Certificates/Shankhnaad CAP.pdf" target="_blank" class="gallery-card">
-                        <img src="Certificates/Shankhnaad CAP_Cover.jpg" alt="Campus Ambassador"
+                    <a href="../Certificates/Shankhnaad CAP.pdf" target="_blank" class="gallery-card">
+                        <img src="../Certificates/Shankhnaad CAP_Cover.jpg" alt="Campus Ambassador"
                             class="gallery-card-image">
                         <div class="gallery-card-content">
                             <span class="gallery-card-title">Campus Ambassador</span>
@@ -485,8 +486,8 @@
                                 </div>
                             </a>
                             <a href="Projects Pages/rendering.html" class="gallery-card">
-                                <img src="Projects Pages/assets/HeroImages/Rendering.svg" alt="Rendering & Visualization"
-                                    class="gallery-card-image">
+                                <img src="Projects Pages/assets/HeroImages/Rendering.svg"
+                                    alt="Rendering & Visualization" class="gallery-card-image">
                                 <div class="gallery-card-content">
                                     <span class="gallery-card-title">Rendering & Visualization</span>
                                 </div>
@@ -531,7 +532,45 @@
         </main>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
+    <script>
+        (function () {
+            const text = "Aditya's Portfolio";
+            const el = document.querySelector('.typewriter');
+            const cursor = document.querySelector('.typewriter-cursor');
+            const typeSpeed = 80;   // ms per character while typing
+            const deleteSpeed = 40; // ms per character while deleting
+            const pauseAfterType = 2200;  // ms pause after fully typed
+            const pauseAfterDelete = 500; // ms pause before retyping
+
+            let i = 0;
+            let deleting = false;
+
+            function tick() {
+                if (!deleting) {
+                    el.textContent = text.slice(0, i + 1);
+                    i++;
+                    if (i === text.length) {
+                        deleting = true;
+                        setTimeout(tick, pauseAfterType);
+                        return;
+                    }
+                    setTimeout(tick, typeSpeed);
+                } else {
+                    el.textContent = text.slice(0, i - 1);
+                    i--;
+                    if (i === 0) {
+                        deleting = false;
+                        setTimeout(tick, pauseAfterDelete);
+                        return;
+                    }
+                    setTimeout(tick, deleteSpeed);
+                }
+            }
+
+            tick();
+        })();
+    </script>
 </body>
 
 </html>
